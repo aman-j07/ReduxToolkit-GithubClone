@@ -1,0 +1,80 @@
+#parentDiv {
+  background-color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 96vh;
+  padding: 2vh;
+}
+#parentDiv>div,#parentDiv>input{
+  border-radius: 8px;
+  border: 2px solid #5a5353;
+}
+#inpSearch {
+  background-color: #e45370;
+  height: 50px;
+  font-size: 25px;
+  width: 70%;
+  color: white;
+}
+#inpSearch::placeholder {
+  color: white;
+}
+#detailsDiv {
+  background-color: #e45370;
+  padding: 20px;
+  display: flex;
+  margin: 50px 0 0;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+}
+#detailsDiv img {
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #5a5353;
+}
+#userStats{
+  width: 60%;
+  text-align: left;
+}
+#userStats h1{
+  margin: 0;
+}
+#btnViewProfile{
+  background-color: #238636;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-left: 20px;
+  font-size: 14px;
+  border: 1px solid #ffffff87;
+}
+#btnViewProfile:hover{
+  background-color: #349146;
+  cursor: grab;
+  border: 1px solid #349146;
+}
+#userStats *{
+  color: white;
+}
+#userStatsHeadDiv{
+  display: flex;
+  align-items: center;
+}
+.userStatsPara{
+  display: inline-block;
+  margin: 10px 15px 10px 0;
+}
+#repoDivsParent{
+  height: 30px;
+  overflow: hidden;
+}
+.repoDivs{
+  background-color: #2a2a2a;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 2px;
+  display: inline-block;
+  margin:2px 5px 2px 0;
+}
