@@ -2,8 +2,10 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import style from "./GithubClone.module.css";
 import { fetchUser } from "./GithubCloneSlice";
+import { useNavigate } from "react-router";
 
 const GithubClone = () => {
+  const navigate=useNavigate();
   const state = useSelector((state) => state.GithubCloneReducer);
   const dispatch = useDispatch();
 
@@ -28,7 +30,7 @@ const GithubClone = () => {
           <div id={style.detailsDiv}>
             <img src={state.user.avatar_url} alt="Avatar"/>
             <div id={style.userStats}>
-              <div id={style.userStatsHeadDiv}><h1>{state.user.name}</h1><button id={style.btnViewProfile}>View Profile</button></div>
+              <div id={style.userStatsHeadDiv}><h1>{state.user.name}</h1><button onClick={()=>{navigate('/GithubHomepageClone')}} id={style.btnViewProfile}>View Profile</button></div>
               <p>{state.user.bio}</p>
               <div>
                 <p className={style.userStatsPara}>{state.user.followers} Followers</p>

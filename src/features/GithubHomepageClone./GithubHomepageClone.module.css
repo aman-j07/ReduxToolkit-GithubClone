@@ -1,0 +1,75 @@
+#homeNav {
+  background-color: #24292f;
+  color: white;
+  justify-content: space-between;
+  padding: 16px 32px;
+}
+#homeNav,
+.navUls,
+#homeNavLeft {
+  display: flex;
+  align-items: center;
+}
+.navUls {
+  margin: 0;
+}
+.navUls li {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+#navLinks li {
+  margin: 0 10px;
+}
+#navIcons li {
+}
+#avatarImg {
+  height: 25px;
+  border-radius: 50%;
+}
+#inpSearch {
+  background-color: #3f4448;
+  margin-left: 10px;
+  border: 1px solid #545454;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+  width: 200px;
+}
+#inpSearch::placeholder {
+  color: white;
+}
+#inpSearch:focus {
+  outline: none;
+}
+#parentNav{
+    display: flex;
+    margin: 24px 0 0;
+    border-bottom: 1px solid #c9c3c3;
+}
+.parentNavUls{
+    margin-left: 25%;
+}
+.parentNavUls li{
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid orange;
+}
+#parent{
+    display: flex;
+    margin: 0 32px;
+    padding: 0 32px;
+}
+#profileAvatar{
+    height: 296px;
+    border-radius: 50%;
+    margin-top: -30px;
+}
+#parentLeft{
+    min-width: 296px;
+    width: 25%;
+}

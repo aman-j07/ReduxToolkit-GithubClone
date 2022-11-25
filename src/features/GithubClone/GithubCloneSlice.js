@@ -1,6 +1,5 @@
 import { createSlice,createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
-import { useDispatch } from "react-redux";
 
 
 const initialState={
@@ -32,6 +31,7 @@ export const GithubCloneSlice=createSlice({
         .addCase(fetchUser.fulfilled,(state,action)=>{
             state.loading=false;
             state.user=action.payload;
+            state.error="";
         })
         .addCase(fetchUser.rejected,(state,action)=>{
             state.loading=false;
