@@ -1,3 +1,6 @@
+.noMar{
+  margin: 0;
+}
 #homeNav {
   background-color: #24292f;
   color: white;
@@ -21,8 +24,6 @@
 #navLinks li {
   margin: 0 10px;
 }
-#navIcons li {
-}
 #avatarImg {
   height: 25px;
   border-radius: 50%;
@@ -42,34 +43,137 @@
 #inpSearch:focus {
   outline: none;
 }
-#parentNav{
-    display: flex;
-    margin: 24px 0 0;
-    border-bottom: 1px solid #c9c3c3;
+#parentNav {
+  display: flex;
+  margin: 24px 0 0;
+  border-bottom: 1px solid #c9c3c3;
 }
-.parentNavUls{
-    margin-left: 25%;
+.parentNavUls {
+  margin-left: 340px;
 }
-.parentNavUls li{
-    font-size: 15px;
-    font-weight: 400;
-    padding: 10px;
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
-    border-bottom: 3px solid orange;
+.parentNavUls li {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
-#parent{
-    display: flex;
-    margin: 0 32px;
-    padding: 0 32px;
+.selectedCategory {
+  border-bottom: 3px solid orange;
 }
-#profileAvatar{
-    height: 296px;
-    border-radius: 50%;
-    margin-top: -30px;
+.userDetails{
+  text-align: left;
 }
-#parentLeft{
-    min-width: 296px;
-    width: 25%;
+.btnSimple{
+  padding: 5px 16px;
+  margin: 5px 5px 16px 0;
+  background-color: #f6f8fa;
+  border: 1px solid #aba3a3;
+  border-radius: 4px;
+  width: 140px;
+  font-size: 14px;
+}
+.name{
+  color:#57606A;
+  font-weight:400;
+}
+.bio{
+  line-height: 1.5;
+}
+.colFollow{
+  color: #24292f;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.userFollow{
+  margin: 12px 5px 12px 0;
+}
+.heavyFont{
+  font-weight: 600;
+}
+#parent {
+  display: flex;
+  margin: 0 32px;
+  padding: 0 32px;
+}
+#profileAvatar {
+  height: 296px;
+  border-radius: 50%;
+  margin-top: -30px;
+}
+#parentLeft {
+  min-width: 296px;
+  width: 25%;
+}
+.parentRight {
+  display: grid;
+  width: -webkit-fill-available;
+}
+.parentRightWide {
+  grid-template-columns: 1fr 1fr;
+}
+.homePageRepos {
+  text-align: left;
+  min-height: 70px;
+}
+.homePageReposHead {
+  display: flex;
+}
+.homePageReposHead > h4 {
+  color: #0969da;
+  margin: 0;
+}
+.homePageReposAccess {
+  border: 1px solid #d0d7de;
+  border-radius: 20px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 4px;
+}
+.homePageReposLang {
+  color: #57606a;
+  font-size: 12px;
+}
+.homePageReposDescription{
+  font-size: 14px;
+  width: 80%;
+  height: 50px;
+  overflow: hidden;
+}
+.homePageReposWide {
+  border: 1px solid #b3a3a3;
+  border-radius: 4px;
+  padding: 15px 10px;
+  margin: 10px;
+  min-width: 300px;
+}
+.homePageReposWideHead {
+  justify-content: space-between;
+}
+.homePageReposWideHead > h4 {
+  font-size: 14px;
+}
+.parentRightNarrow {
+  grid-template-columns: 1fr;
+  margin: 10px 0 10px 10px;
+}
+.homePageReposNarrow {
+  border-top: 1px solid #d0d7de;
+  border-bottom: 1px solid #d0d7de;
+  padding: 24px 0px;
+}
+.homePageReposNarrowHead {
+  align-items: center;
+}
+.homePageReposNarrowHead > h4 {
+  font-size: 20px;
+}
+#project {
+  margin: 30px auto;
+  width: 98%;
+  border: 1px solid #d0d7de;
+  height: fit-content;
+  border-radius: 4px;
+  padding: 40px 0;
 }

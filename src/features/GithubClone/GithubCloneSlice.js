@@ -14,6 +14,7 @@ export const fetchUser=createAsyncThunk("GithubClone/fetchUser",async (username)
     const res= await axios.get(`https://api.github.com/users/${username}`)
     const resRepos= await axios.get(`https://api.github.com/users/${username}/repos`)
     res.data.repos=resRepos.data
+    console.log(resRepos.data)
     return res.data;    
 })
 
